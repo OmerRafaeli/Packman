@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body onload="init()" onkeyup="movePacman(event)">
+
+    <h2>Score: <span>0</span></h2>
+    <div class="board-container"></div>
+
+    <div class="winner-modal">
+       <p class="winner" style="color: #ffffff">!!Congratulations!!</p>
+        <button class="reset reset-btn" onclick="init()">Play Again?</button>
+    </div>
+
+    <div class="gameover-modal">
+        <p class="game-over" style="color: #ffffff">Game Over</p>
+        <button class="reset reset-btn" onclick="init()">Play Again?</button>
+    </div>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/pacman.js"></script>
+    <script src="js/ghost.js"></script>
+</body>
+</html>
